@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Richter ElektroCom — 360°-Technik für Bauprojekte im Hochstift Paderborn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-pro.css" />
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Demo strip -->
+<div class="demo-strip"><span>●</span> Demo-Vorschau · Inhalte zu Demonstrationszwecken</div>
+
+<!-- Utility bar -->
+<div class="util-bar">
+  <div class="wrap">
+    <div class="util-left">
+      <a class="util-link" href="tel:+495258210800">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        05258 21080-0
+      </a>
+      <a class="util-link" href="mailto:info@r-ec.de">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73z"/></svg>
+        info@r-ec.de
+      </a>
+      <a class="util-link" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v10A1.5 1.5 0 0 1 14.5 13h-13A1.5 1.5 0 0 1 0 11.5v-10zM1.5 1a.5.5 0 0 0-.5.5V2h14v-.5a.5.5 0 0 0-.5-.5h-13zm14 2.5H1v8a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-8z"/></svg>
+        Fernwartung
+      </a>
+    </div>
+    <div class="util-right">
+      <span class="util-meta"><span class="dot"></span> Mo–Do 7:00–16:30 · Fr 7:00–13:00</span>
+      <span class="util-meta">Salzkotten · Hochstift Paderborn</span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Richter ElektroCom Startseite">
+      <img class="brand-logo" src="https://www.richter-elektrocom.de/wp-content/uploads/2023/02/R-EC_Logo_inv.png" alt="Richter ElektroCom" />
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="energie.html">Energie</a>
+      <a href="elektrotechnik.html">Elektrotechnik</a>
+      <a href="heizung-sanitaer.html">Heizung &amp; Sanitär</a>
+      <a href="it-kommunikation.html">IT &amp; Kommunikation</a>
+      <a href="unternehmen.html">Unternehmen</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="#kontakt" class="cta">Kontakt</a>
+    </nav>
+
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Menü öffnen">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<aside class="nav-drawer" id="navDrawer">
+  <div class="nav-drawer-head">
+    <img class="brand-logo" src="https://www.richter-elektrocom.de/wp-content/uploads/2023/02/R-EC_Logo_inv.png" alt="Richter ElektroCom" />
+    <button class="nav-drawer-close" id="navClose" aria-label="Menü schließen">×</button>
+  </div>
+  <a href="energie.html">Energie <span class="num">01</span></a>
+  <a href="elektrotechnik.html">Elektrotechnik <span class="num">02</span></a>
+  <a href="heizung-sanitaer.html">Heizung &amp; Sanitär <span class="num">03</span></a>
+  <a href="it-kommunikation.html">IT &amp; Kommunikation <span class="num">04</span></a>
+  <a href="unternehmen.html">Unternehmen <span class="num">05</span></a>
+  <a href="karriere.html">Karriere <span class="num">06</span></a>
+  <a href="#kontakt" style="color: var(--brand-blue);">Kontakt aufnehmen <span class="num">→</span></a>
+</aside>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="hero-text">
+        <span class="eyebrow">Richter ElektroCom · seit 1956</span>
+        <h1 class="h-display">
+          360-Grad-Technik für Ihr Bau&shy;projekt.
+        </h1>
+        <p class="lead">
+          <strong class="lead-emph">Elektro, Heizung &amp; Sanitär, IT und Energie</strong> — wir planen und realisieren die komplette Technik für Ihr Bauprojekt. Aus einem Haus, von der Erstberatung bis zur Schlüsselübergabe.
+        </p>
+        <div class="region">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Kreis Paderborn · Büren · Lippstadt · Bad Driburg · Delbrück · Gütersloh
+        </div>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">
+            Kostenfreie Erstberatung
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="#leistungen" class="btn btn-ghost">Leistungen ansehen</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wide team photo -->
+    <div class="hero-image">
+      <img src="images/team-photo.jpg" alt="Das Team von Richter ElektroCom vor dem Firmensitz in Salzkotten" loading="eager" />
+      <div class="hero-overlay">
+        <div class="hero-stamp">
+          <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.4-8 12-8 12s-8-7.6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Standort Salzkotten · An der Burg 10
+        </div>
+        <div class="hero-figures">
+          <div class="hero-fig"><span class="v">70</span><span class="k">Jahre am Markt</span></div>
+          <div class="hero-fig"><span class="v">2.500<sup>+</sup></span><span class="k">Bauprojekte</span></div>
+          <div class="hero-fig"><span class="v">28</span><span class="k">Mitarbeitende</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BADGES STRIP -->
+<section class="trust-strip">
+  <div class="wrap">
+    <div class="trust-badges">
+      <div class="badge">
+        <div class="badge-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <div class="badge-v">4,9 <span>/ 5</span></div>
+          <div class="badge-k">Aus 120+ Kundenbewertungen</div>
+        </div>
+      </div>
+      <div class="badge">
+        <div class="badge-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M12 2a8 8 0 0 0-8 8v6.5a3.5 3.5 0 0 0 2.5 3.36L12 22l5.5-2.14A3.5 3.5 0 0 0 20 16.5V10a8 8 0 0 0-8-8z"/></svg>
+        </div>
+        <div>
+          <div class="badge-v">Meisterbetrieb</div>
+          <div class="badge-k">Innungsmitglied &amp; zertifiziert</div>
+        </div>
+      </div>
+      <div class="badge">
+        <div class="badge-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="4"/></svg>
+        </div>
+        <div>
+          <div class="badge-v">Vollständig versichert</div>
+          <div class="badge-k">Betriebs- &amp; Berufshaftpflicht</div>
+        </div>
+      </div>
+      <div class="badge">
+        <div class="badge-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="badge-v">Antwort in 24h</div>
+          <div class="badge-k">Werktags · per Telefon &amp; E-Mail</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN / Services -->
+<section class="services" id="leistungen">
+  <div class="wrap">
+    <header class="services-head">
+      <div>
+        <span class="eyebrow">Geschäftsbereiche</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Vier Disziplinen.<br/>
+          Sauber koordiniert.
+        </h2>
+      </div>
+      <p class="lead">
+        Statt vier verschiedene Firmen zu koordinieren, übernehmen wir die Schnittstellen zwischen den Gewerken — Planung, Ausführung und Abnahme aus einer Hand.
+      </p>
+    </header>
+
+    <div class="svc-grid" id="svcGrid" data-variant="editorial">
+      <article class="svc" data-acc="energie">
+        <div class="svc-num">01 — Energie</div>
+        <h3 class="h-card svc-title">Photovoltaik, E-Mobilität &amp; Energiemanagement</h3>
+        <p class="svc-desc">
+          Zukunftsfähige Energieinfrastruktur für Unternehmen und öffentliche Einrichtungen — von der Wirtschaftlichkeitsanalyse bis zum Betrieb.
+        </p>
+        <ul class="svc-list">
+          <li>E-Mobilität &amp; Ladeinfrastruktur</li>
+          <li>Photovoltaik &amp; Batteriespeicher</li>
+          <li>Energiemanagement-Systeme</li>
+          <li>Bezahl- &amp; Abrechnungssysteme</li>
+          <li>Förderung Energieeffizienz</li>
+          <li>Lastmanagement Dienstwagenflotte</li>
+        </ul>
+        <div class="svc-foot">
+          <a href="energie.html">
+            Mehr zu Energie
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <span class="tag">Bereich 01</span>
+        </div>
+      </article>
+
+      <article class="svc" data-acc="elektro">
+        <div class="svc-num">02 — Elektrotechnik</div>
+        <h3 class="h-card svc-title">Neu- &amp; Umbauten, Netzanschluss, E-Check</h3>
+        <p class="svc-desc">
+          Elektroinstallation für Gewerbe, Industrie und Privatbau — bis zur Trafostation und über den E-Check hinaus.
+        </p>
+        <ul class="svc-list">
+          <li>Neu- &amp; Umbauten</li>
+          <li>Netzanschluss &amp; Trafostationen</li>
+          <li>Beleuchtungssysteme</li>
+          <li>Schließanlagen &amp; Alarmsysteme</li>
+          <li>E-Check für Unternehmen</li>
+          <li>Blitz- &amp; Überspannungsschutz</li>
+        </ul>
+        <div class="svc-foot">
+          <a href="elektrotechnik.html">
+            Mehr zu Elektrotechnik
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <span class="tag">Bereich 02</span>
+        </div>
+      </article>
+
+      <article class="svc" data-acc="heizung">
+        <div class="svc-num">03 — Heizung &amp; Sanitär</div>
+        <h3 class="h-card svc-title">Wärmepumpen, Heizungstechnik &amp; Bad</h3>
+        <p class="svc-desc">
+          Effiziente Wärme- und Klimalösungen — von der Wärmepumpe für das Einfamilienhaus bis zur Lüftungsanlage im Gewerbebau.
+        </p>
+        <ul class="svc-list">
+          <li>Neu- &amp; Umbauten</li>
+          <li>Wärmepumpen &amp; Lüftungen</li>
+          <li>Badsanierung</li>
+          <li>Enthärtungsanlagen</li>
+          <li>Heizungstechnik</li>
+          <li>Hydraulischer Abgleich</li>
+        </ul>
+        <div class="svc-foot">
+          <a href="heizung-sanitaer.html">
+            Mehr zu Heizung &amp; Sanitär
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <span class="tag">Bereich 03</span>
+        </div>
+      </article>
+
+      <article class="svc" data-acc="it">
+        <div class="svc-num">04 — IT &amp; Kommunikation</div>
+        <h3 class="h-card svc-title">Managed Services, IT-Sicherheit &amp; Netzwerk</h3>
+        <p class="svc-desc">
+          IT-Infrastruktur, die zum Bauwerk passt — von der strukturierten Verkabelung bis zur Cloud-Migration und 24/7-Überwachung.
+        </p>
+        <ul class="svc-list">
+          <li>Managed Services</li>
+          <li>IT-Sicherheit</li>
+          <li>Netzwerktechnik</li>
+          <li>Cloud &amp; Microsoft 365</li>
+          <li>Telefonanlagen</li>
+          <li>Videoüberwachung</li>
+        </ul>
+        <div class="svc-foot">
+          <a href="it-kommunikation.html">
+            Mehr zu IT &amp; Kommunikation
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <span class="tag">Bereich 04</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROZESS — vertikal mit Icons + Scroll-Animation -->
+<section class="process">
+  <div class="wrap">
+    <header class="process-head">
+      <div>
+        <span class="eyebrow">Ablauf</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Vier Schritte<br/>
+          zur Übergabe.
+        </h2>
+      </div>
+      <p class="lead">
+        Ein Projektleiter, klare Schnittstellen, transparente Kommunikation. So koordinieren wir Technik so, dass am Ende alles ineinandergreift.
+      </p>
+    </header>
+
+    <div class="steps-v" id="stepsV">
+      <article class="step-v">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="step-body">
+          <div class="step-meta">Schritt 01 · Erstgespräch</div>
+          <h3>Beratung &amp; Konzept</h3>
+          <p>Ganzheitliche Analyse Ihrer Anforderungen — gewerkeübergreifend gedacht. Wir hören erst zu, prüfen die Lage und schlagen einen konkreten ersten Schritt vor.</p>
+          <ul>
+            <li>Kostenfreie Erstberatung</li>
+            <li>Bedarfsanalyse</li>
+            <li>Standortbegehung</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step-v">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H1l8-8 8 8h-3v8H9v-8z" transform="translate(3 1)"/><rect x="3" y="14" width="18" height="8" rx="1"/></svg>
+        </div>
+        <div class="step-body">
+          <div class="step-meta">Schritt 02 · Planung</div>
+          <h3>Technische Fachplanung</h3>
+          <p>Elektro, Heizung, IT und Energie technisch aufeinander abgestimmt. Sie bekommen einen Plan, in dem nichts doppelt gemacht und nichts vergessen wird.</p>
+          <ul>
+            <li>Fachplanung 4 Gewerke</li>
+            <li>Wirtschaftlichkeit</li>
+            <li>Förderung &amp; Genehmigung</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step-v">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="step-body">
+          <div class="step-meta">Schritt 03 · Umsetzung</div>
+          <h3>Saubere Ausführung</h3>
+          <p>Ein fester Ansprechpartner, klare Abläufe, terminsicher und transparent. Unsere Monteure kommen aus dem Haus — kein Subunternehmer-Karussell.</p>
+          <ul>
+            <li>Festangestelltes Team</li>
+            <li>Eigene Bauleitung</li>
+            <li>Wochen-Update</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="step-v">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="step-body">
+          <div class="step-meta">Schritt 04 · Übergabe</div>
+          <h3>Abnahme &amp; Betrieb</h3>
+          <p>Wartung, Service und technische Betreuung weit über die Bauphase hinaus. Wir bleiben Ihr Ansprechpartner — auch nach der Schlüsselübergabe.</p>
+          <ul>
+            <li>Dokumentation</li>
+            <li>Wartungsvertrag</li>
+            <li>Service-Hotline</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM R-EC -->
+<section class="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-text">
+        <span class="eyebrow">Warum Richter ElektroCom?</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Familien&shy;unternehmen<br/>
+          in dritter Generation.
+        </h2>
+        <p class="lead">
+          Seit 1956 bauen wir Technik in der Region — mit eigenem Team, eigenem Fuhrpark, eigener Verantwortung. Das spüren Sie an jedem Detail.
+        </p>
+        <a href="#kontakt" class="btn btn-primary" style="margin-top: 24px;">
+          Erstberatung anfragen
+          <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </a>
+      </div>
+      <ul class="why-list">
+        <li>
+          <span class="why-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div>
+            <strong>Vier Gewerke aus einer Hand</strong>
+            <p>Sie sparen die Koordination zwischen Elektriker, Heizungsbauer, IT-Firma und Energieberater.</p>
+          </div>
+        </li>
+        <li>
+          <span class="why-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div>
+            <strong>Fester Projektleiter</strong>
+            <p>Ein Ansprechpartner für die ganze Bauphase — vom ersten Gespräch bis zur Schlüsselübergabe.</p>
+          </div>
+        </li>
+        <li>
+          <span class="why-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div>
+            <strong>Eigene Monteure</strong>
+            <p>28 festangestellte Fachkräfte aus Salzkotten — keine wechselnden Subunternehmer auf Ihrer Baustelle.</p>
+          </div>
+        </li>
+        <li>
+          <span class="why-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div>
+            <strong>Förder-Know-how</strong>
+            <p>Wir kennen die Förderprogramme — und unterstützen bei BAFA-Antrag, KfW und kommunaler Förderung.</p>
+          </div>
+        </li>
+        <li>
+          <span class="why-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div>
+            <strong>Antwort in 24 Stunden</strong>
+            <p>Werktags melden wir uns spätestens am Folgetag mit einem konkreten nächsten Schritt.</p>
+          </div>
+        </li>
+        <li>
+          <span class="why-check" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          <div>
+            <strong>Service-Vertrag verfügbar</strong>
+            <p>Wartung, Inspektion und Störungsdienst — wir bleiben technischer Partner über die Bauphase hinaus.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST / Zahlen -->
+<section class="trust">
+  <div class="wrap">
+    <header class="services-head" style="margin-bottom: 32px;">
+      <div>
+        <span class="eyebrow">In Zahlen</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Belastbar.<br/>
+          Seit sieben Jahrzehnten.
+        </h2>
+      </div>
+      <p class="lead">
+        Was uns als Familienunternehmen seit 1956 ausmacht — und unsere Kunden über alle Branchen hinweg verbindet.
+      </p>
+    </header>
+
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-num" data-count="28" data-suffix="">28</div>
+        <h4>Engagierte Mitarbeitende</h4>
+        <p>Festangestelltes Team aus Meistern, Gesellen und Auszubildenden.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num" data-count="70" data-suffix="">70</div>
+        <h4>Jahre Technik-Expertise</h4>
+        <p>Sieben Jahrzehnte Erfahrung im Hochstift Paderborn — über drei Generationen.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num" data-count="2500" data-suffix="+">2.500<span class="suf">+</span></div>
+        <h4>Bauprojekte umgesetzt</h4>
+        <p>Vom Einfamilienhaus bis zum Industriegebäude — zuverlässig und sauber.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIEN / Für wen wir arbeiten -->
+<section class="industries">
+  <div class="wrap">
+    <header class="services-head" style="margin-bottom: 40px;">
+      <div>
+        <span class="eyebrow">Für wen wir arbeiten</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Branchen,<br/>
+          die wir abdecken.
+        </h2>
+      </div>
+      <p class="lead">
+        Von der Industrie über öffentliche Träger bis zum Privatbau — wir kennen die Anforderungen der Branchen, in denen wir arbeiten.
+      </p>
+    </header>
+
+    <div class="industry-grid">
+      <div class="industry">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <h4>Industrie</h4>
+        <p>Produktionsanlagen, Hallen-Beleuchtung, Trafostationen, Wartungsverträge.</p>
+      </div>
+      <div class="industry">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4>Bauunternehmen</h4>
+        <p>Generalunternehmer-Schnittstelle, gewerkeübergreifende Koordination, BIM-fähig.</p>
+      </div>
+      <div class="industry">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h4>Architekten</h4>
+        <p>Technische Beratung in der Planungsphase, Ausschreibungsreife, Detailplanung.</p>
+      </div>
+      <div class="industry">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>Dienstleister</h4>
+        <p>Praxen, Kanzleien, Studios, Büros — Technik, die zur Arbeitsumgebung passt.</p>
+      </div>
+      <div class="industry">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h4>Öffentlicher Träger</h4>
+        <p>Schulen, Kommunen, Verwaltungen — vergaberechtskonform und förderfähig.</p>
+      </div>
+      <div class="industry">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h4>Privatkunden</h4>
+        <p>Eigenheim, Sanierung, Wärmepumpe, Bad — saubere Arbeit, klare Kommunikation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS / Kundenstimmen -->
+<section class="testim">
+  <div class="wrap">
+    <header class="testim-head">
+      <div>
+        <span class="eyebrow">Kundenstimmen</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Was unsere Kunden<br/>
+          uns zurückspiegeln.
+        </h2>
+      </div>
+      <p class="lead">
+        Vier Geschäftsbereiche, vier Branchen, vier Stimmen — der Anspruch ist derselbe.
+      </p>
+    </header>
+
+    <div class="testim-grid">
+      <article class="testim-card" data-acc="energie">
+        <div class="acc-line"></div>
+        <div class="testim-quote-mark" aria-hidden="true">“</div>
+        <p class="testim-text">
+          Die Ladeinfrastruktur läuft seit über zwei Jahren absolut zuverlässig. Planung, Genehmigung und Inbetriebnahme liefen reibungslos — und die THG-Abrechnung funktioniert automatisch.
+        </p>
+        <div class="testim-meta">
+          <div class="testim-author">
+            Stefan Brinkmann
+            <span>Fuhrparkleiter · Logistikzentrum Paderborn</span>
+          </div>
+          <div class="testim-cat">Energie</div>
+        </div>
+      </article>
+
+      <article class="testim-card" data-acc="elektro">
+        <div class="acc-line"></div>
+        <div class="testim-quote-mark" aria-hidden="true">“</div>
+        <p class="testim-text">
+          Alle vier Gewerke aus einer Hand — das hat unser Bauvorhaben erheblich vereinfacht. Klare Verantwortlichkeiten, kein Schnittstellen-Chaos, saubere Dokumentation.
+        </p>
+        <div class="testim-meta">
+          <div class="testim-author">
+            Michael Schmidt
+            <span>Geschäftsführer · Produktionsbetrieb</span>
+          </div>
+          <div class="testim-cat">Elektrotechnik</div>
+        </div>
+      </article>
+
+      <article class="testim-card" data-acc="heizung">
+        <div class="acc-line"></div>
+        <div class="testim-quote-mark" aria-hidden="true">“</div>
+        <p class="testim-text">
+          Die neue Wärmepumpe läuft einwandfrei. Positiv: Festpreis, Festtermin, saubere Baustelle. Das Team war immer erreichbar — auch nach der Abnahme.
+        </p>
+        <div class="testim-meta">
+          <div class="testim-author">
+            Familie Schneider
+            <span>Hauseigentümer · Salzkotten</span>
+          </div>
+          <div class="testim-cat">Heizung &amp; Sanitär</div>
+        </div>
+      </article>
+
+      <article class="testim-card" data-acc="it">
+        <div class="acc-line"></div>
+        <div class="testim-quote-mark" aria-hidden="true">“</div>
+        <p class="testim-text">
+          Kompetent, schnell und immer erreichbar. Die IT-Betreuung läuft seit Jahren reibungslos — Updates, Support und Sicherheit ohne Unterbrechung des Praxisbetriebs.
+        </p>
+        <div class="testim-meta">
+          <div class="testim-author">
+            Dr. Thomas Becker
+            <span>Praxisinhaber · Gemeinschaftspraxis</span>
+          </div>
+          <div class="testim-cat">IT &amp; Kommunikation</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER & ZERTIFIZIERUNGEN — auto-scrolling ticker -->
+<section class="partners">
+  <div class="wrap">
+    <div class="partners-head">Partner &amp; Zertifizierungen</div>
+  </div>
+  <div class="ticker">
+    <div class="ticker-track">
+      <!-- one full set -->
+      <div class="ticker-item">Siemens</div>
+      <div class="ticker-item">Microsoft</div>
+      <div class="ticker-item">Buderus</div>
+      <div class="ticker-item">Viessmann</div>
+      <div class="ticker-item">Hager</div>
+      <div class="ticker-item">Sophos</div>
+      <div class="ticker-item">BAFA</div>
+      <div class="ticker-item">Bosch</div>
+      <div class="ticker-item">Innung E-Handwerk</div>
+      <div class="ticker-item">VdS</div>
+      <div class="ticker-item">e-Mobility BDEW</div>
+      <div class="ticker-item">KfW-Partner</div>
+      <!-- duplicate for seamless loop -->
+      <div class="ticker-item" aria-hidden="true">Siemens</div>
+      <div class="ticker-item" aria-hidden="true">Microsoft</div>
+      <div class="ticker-item" aria-hidden="true">Buderus</div>
+      <div class="ticker-item" aria-hidden="true">Viessmann</div>
+      <div class="ticker-item" aria-hidden="true">Hager</div>
+      <div class="ticker-item" aria-hidden="true">Sophos</div>
+      <div class="ticker-item" aria-hidden="true">BAFA</div>
+      <div class="ticker-item" aria-hidden="true">Bosch</div>
+      <div class="ticker-item" aria-hidden="true">Innung E-Handwerk</div>
+      <div class="ticker-item" aria-hidden="true">VdS</div>
+      <div class="ticker-item" aria-hidden="true">e-Mobility BDEW</div>
+      <div class="ticker-item" aria-hidden="true">KfW-Partner</div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT / Footer -->
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="contact-top">
+      <div class="contact-info">
+        <span class="eyebrow" style="color: #94a3b8;">Kontakt</span>
+        <h2 class="h-section" style="margin-top: 16px;">
+          Lassen Sie uns über<br/>
+          Ihr Projekt sprechen.
+        </h2>
+        <p class="lead">
+          Vereinbaren Sie eine kostenfreie Erstberatung. Wir hören erst zu, prüfen die Anforderungen und melden uns mit einem konkreten nächsten Schritt — meist innerhalb von 24 Stunden.
+        </p>
+
+      </div>
+
+      <form class="form-card" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('successMsg').style.display='block'; this.querySelector('button').style.display='none';">
+        <div class="form-head">
+          <h3>Erstberatung anfragen</h3>
+          <p class="sub">Wir melden uns innerhalb eines Werktags.</p>
+        </div>
+        <div class="form-grid">
+          <div class="field"><label for="fn">Vorname</label><input id="fn" name="fn" type="text" required /></div>
+          <div class="field"><label for="ln">Nachname</label><input id="ln" name="ln" type="text" required /></div>
+          <div class="field"><label for="em">E-Mail</label><input id="em" name="em" type="email" required /></div>
+          <div class="field"><label for="ph">Telefon</label><input id="ph" name="ph" type="tel" required /></div>
+          <div class="field"><label for="co">Unternehmen <span style="text-transform:none; opacity: 0.6;">(optional)</span></label><input id="co" name="co" type="text" /></div>
+          <div class="field"><label for="subj">Bereich</label><select id="subj" name="subj" required><option value="">Bitte wählen…</option><option>Energie</option><option>Elektrotechnik</option><option>Heizung &amp; Sanitär</option><option>IT &amp; Kommunikation</option><option>Allgemeine Anfrage</option></select></div>
+          <div class="field span-all"><label for="msg">Worum geht's?</label><textarea id="msg" name="msg" required></textarea></div>
+        </div>
+        <div class="form-foot">
+          <div class="privacy">
+            <input id="pri" type="checkbox" required />
+            <label for="pri">Ich stimme der Verarbeitung meiner Daten gemäß <a href="#">Datenschutzerklärung</a> zu.</label>
+          </div>
+          <button type="submit">
+            Anfrage senden
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <div id="successMsg" style="display:none; margin-top: 20px; padding: 16px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px; color: #d1fae5; font-size: 14px;">
+          ✓ Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-channels">
+          <a class="channel" href="tel:+495258210800">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>
+              <span class="label">Telefon</span>
+              <span class="value">05258 21080-0</span>
+            </span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="channel" href="mailto:info@r-ec.de">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+            <span>
+              <span class="label">E-Mail</span>
+              <span class="value">info@r-ec.de</span>
+            </span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="channel" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>
+              <span class="label">Adresse</span>
+              <span class="value">An der Burg 10, 33154 Salzkotten</span>
+            </span>
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+<!-- Footer columns -->
+        <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <img class="brand-logo" src="https://www.richter-elektrocom.de/wp-content/uploads/2023/02/R-EC_Logo_inv.png" alt="Richter ElektroCom" style="height: 52px;" />
+        <p>Familienunternehmen für 360°-Technik im Hochstift Paderborn — über drei Generationen, vier Gewerke.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Energie</h5>
+        <a href="energie.html#e-mobilitaet">E-Mobilität</a>
+        <a href="energie.html#photovoltaik">Photovoltaik</a>
+        <a href="energie.html#energiemanagement">Energiemanagement</a>
+      </div>
+      <div class="footer-col">
+        <h5>Elektrotechnik</h5>
+        <a href="elektrotechnik.html#neu-umbauten">Neu- &amp; Umbauten</a>
+        <a href="elektrotechnik.html#netzanschluss">Netzanschluss</a>
+        <a href="elektrotechnik.html#e-check">E-Check</a>
+      </div>
+      <div class="footer-col">
+        <h5>Heizung &amp; Sanitär</h5>
+        <a href="heizung-sanitaer.html#waermepumpen">Wärmepumpen</a>
+        <a href="heizung-sanitaer.html#badsanierung">Badsanierung</a>
+        <a href="heizung-sanitaer.html#heizungstechnik">Heizungstechnik</a>
+      </div>
+      <div class="footer-col">
+        <h5>IT &amp; Kommunikation</h5>
+        <a href="it-kommunikation.html#managed-services">Managed Services</a>
+        <a href="it-kommunikation.html#it-sicherheit">IT-Sicherheit</a>
+        <a href="it-kommunikation.html#cloud">Cloud-Lösungen</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Richter ElektroCom GmbH · An der Burg 10 · 33154 Salzkotten</p>
+      <div class="links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Callback CTA -->
+<a href="#kontakt" class="sticky-cta" aria-label="Rückruf anfordern">
+  <span class="sticky-cta-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </span>
+  <span class="sticky-cta-text">
+    <span class="t1">Rückruf anfordern</span>
+    <span class="t2">Antwort in 24h</span>
+  </span>
+</a>
+
+<script>
+  // Count-up animation for trust numbers
+  function animateCount(el) {
+    const target = parseInt(el.getAttribute('data-count'), 10);
+    const suffix = el.getAttribute('data-suffix') || '';
+    const duration = 1800;
+    const start = performance.now();
+    const easeInOut = t => t < 0.5 ? 2*t*t : 1 - Math.pow(-2*t+2, 2)/2;
+    const fmt = n => n >= 1000 ? (n/1000).toFixed(n%1000===0?0:1).replace('.',',') + '.' + String(n%1000).padStart(3,'0') : String(n);
+    const tick = now => {
+      const p = Math.min((now - start) / duration, 1);
+      const val = Math.round(easeInOut(p) * target);
+      el.innerHTML = (target >= 1000 ? '2.500' : val) + (suffix ? `<span class="suf">${suffix}</span>` : '');
+      if (target < 1000) el.innerHTML = val + (suffix ? `<span class="suf">${suffix}</span>` : '');
+      if (p < 1) requestAnimationFrame(tick);
+      else {
+        if (target === 2500) el.innerHTML = '2.500<span class="suf">+</span>';
+        else el.innerHTML = target + (suffix ? `<span class="suf">${suffix}</span>` : '');
+      }
+    };
+    requestAnimationFrame(tick);
+  }
+
+  if ('IntersectionObserver' in window) {
+    const countObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animateCount(e.target);
+          countObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.trust-num[data-count]').forEach(el => countObs.observe(el));
+  }
+
+  // Mobile menu
+  const navToggle = document.getElementById('navToggle');
+  const navDrawer = document.getElementById('navDrawer');
+  const navClose = document.getElementById('navClose');
+  navToggle.addEventListener('click', () => { navDrawer.classList.add('open'); document.body.style.overflow = 'hidden'; });
+  navClose.addEventListener('click', () => { navDrawer.classList.remove('open'); document.body.style.overflow = ''; });
+  navDrawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navDrawer.classList.remove('open'); document.body.style.overflow = ''; }));
+
+  // Scroll-triggered animation for process steps
+  const stepsContainer = document.getElementById('stepsV');
+  if (stepsContainer && 'IntersectionObserver' in window) {
+    const steps = stepsContainer.querySelectorAll('.step-v');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Stagger: add 'in' class with a small delay based on index within visible batch
+          const idx = Array.from(steps).indexOf(entry.target);
+          setTimeout(() => entry.target.classList.add('in'), idx * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -10% 0px' });
+    steps.forEach(s => observer.observe(s));
+  } else {
+    document.querySelectorAll('.step-v').forEach(s => s.classList.add('in'));
+  }
+</script>
+
+<!-- Hero split-layout styles -->
+<style>
+/* === Split hero (Side-by-Side) === */
+.hero[data-hero-layout="split"] {
+  background: var(--paper-cool);
+  overflow: visible;
+}
+.hero[data-hero-layout="split"] .wrap {
+  display: grid;
+  grid-template-columns: 44% 1fr;
+  align-items: stretch;
+  padding: 0;
+  max-width: 100%;
+  gap: 0;
+  column-gap: 0;
+}
+.hero[data-hero-layout="split"] .hero-top {
+  display: flex;
+  align-items: center;
+  padding: clamp(40px,6vw,80px) clamp(40px,5vw,72px);
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+.hero[data-hero-layout="split"] .hero-text {
+  width: 100%;
+  overflow: visible;
+}
+/* Headline-Block ragt als farbiges Feld ins Bild hinein */
+.hero[data-hero-layout="split"] .h-display {
+  background: var(--paper-cool);
+  padding: 18px clamp(32px, 5vw, 64px) 18px 0;
+  width: calc(100% + clamp(120px, 18vw, 320px));
+  position: relative;
+  z-index: 3;
+  margin-bottom: 28px;
+  font-size: clamp(36px, 5.2vw, 72px);
+}
+.hero[data-hero-layout="split"] .hero-image {
+  position: relative;
+  z-index: 1;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 0;
+  margin: 0;
+}
+.hero[data-hero-layout="split"] .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+/* === Stacked hero (default) === */
+.hero[data-hero-layout="stacked"] .wrap {
+  flex-direction: column;
+}
+.hero[data-hero-layout="stacked"] .hero-image img {
+  height: auto;
+  object-fit: unset;
+}
+
+@media (max-width: 860px) {
+  .hero[data-hero-layout="split"] .wrap {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(32px,5vw,60px) var(--gutter);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  .hero[data-hero-layout="split"] .hero-top {
+    padding: 0;
+    overflow: hidden;
+  }
+  .hero[data-hero-layout="split"] .h-display {
+    width: 100%;
+    padding-right: 0;
+    font-size: clamp(32px, 7vw, 52px);
+  }
+  .hero[data-hero-layout="split"] .hero-image {
+    border-radius: var(--rad-md);
+    min-height: 260px;
+  }
+}
+</style>
+
+<!-- Tweaks Panel -->
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" data-presets="env,react">
+  const { useTweaks, TweaksPanel, TweakSection, TweakRadio } = window;
+
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "cardVariant": "image",
+    "heroLayout": "split"
+  }/*EDITMODE-END*/;
+
+  function Tweaks() {
+    const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+    // Hero layout effect
+    React.useEffect(() => {
+      const hero = document.querySelector('.hero');
+      if (!hero) return;
+      hero.setAttribute('data-hero-layout', t.heroLayout);
+    }, [t.heroLayout]);
+
+    React.useEffect(() => {
+      const grid = document.getElementById('svcGrid');
+      if (!grid) return;
+      grid.setAttribute('data-variant', t.cardVariant);
+      if (t.cardVariant === 'image') {
+        const map = {
+          energie: 'linear-gradient(135deg, #0c8a59 0%, #2bbd80 100%)',
+          elektro: 'linear-gradient(135deg, #d2243c 0%, #f06478 100%)',
+          heizung: 'linear-gradient(135deg, #2256e0 0%, #5b8df2 100%)',
+          it:      'linear-gradient(135deg, #4a5667 0%, #74819a 100%)'
+        };
+        grid.querySelectorAll('.svc').forEach(card => {
+          const acc = card.getAttribute('data-acc');
+          card.style.setProperty('--svc-img', map[acc] || '');
+        });
+      } else {
+        grid.querySelectorAll('.svc').forEach(card => card.style.removeProperty('--svc-img'));
+      }
+    }, [t.cardVariant]);
+
+    return (
+      <TweaksPanel title="Tweaks" defaultOpen={false}>
+        <TweakSection label="Hero-Layout" subtitle="Text & Bild Anordnung">
+          <TweakRadio
+            label="Layout"
+            value={t.heroLayout}
+            onChange={v => setTweak('heroLayout', v)}
+            options={[
+              { value: 'split',    label: 'Side-by-Side' },
+              { value: 'stacked',  label: 'Gestapelt' }
+            ]}
+          />
+        </TweakSection>
+        <TweakSection label="Kachel-Stil (Geschäftsbereiche)" subtitle="Drei Varianten zum Vergleich">
+          <TweakRadio
+            label="Variante"
+            value={t.cardVariant}
+            onChange={v => setTweak('cardVariant', v)}
+            options={[
+              { value: 'editorial', label: 'Editorial' },
+              { value: 'image',     label: 'Bild-geführt' },
+              { value: 'mono',      label: 'Monolith' }
+            ]}
+          />
+        </TweakSection>
+      </TweaksPanel>
+    );
+  }
+
+  const tweaksRoot = document.createElement('div');
+  document.body.appendChild(tweaksRoot);
+  ReactDOM.createRoot(tweaksRoot).render(<Tweaks />);
+</script>
+
+</body>
+</html>
